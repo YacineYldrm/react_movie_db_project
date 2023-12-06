@@ -3,6 +3,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 420fr));
     gap: 40px;
+    padding: 2% 4%;
 
     .movie_card_wrapper
     {
