@@ -41,14 +41,14 @@ const Header = () => {
     const sortAtoZ = () => {
 
         setEvent(event => !event)
-        setMovieData(movieData.sort((movie1, movie2) => movie1.title.charAt(0) < movie2.title.charAt(0) ? -1 : 1))
+        setMovieData(movieData.sort((movie1, movie2) => movie1.title < movie2.title ? -1 : 1))
     }
     
     // sort z -> a
     const sortZtoA = () => {
 
         setEvent(event => !event)
-        setMovieData(movieData.sort((movie1, movie2) => movie1.title.charAt(0) > movie2.title.charAt(0) ? -1 : 1))
+        setMovieData(movieData.sort((movie1, movie2) => movie1.title > movie2.title ? -1 : 1))
     }
 
     // filter by genre
