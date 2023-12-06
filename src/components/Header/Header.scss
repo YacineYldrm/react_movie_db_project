@@ -12,6 +12,7 @@ header
     h1
     {
         font-size: 62px;
+        text-shadow: 2px 3px #1B4242;
     }
 
     .search_input_wrapper
@@ -21,6 +22,19 @@ header
         align-items: center;
         gap: 16px;
 
+        button, select
+        {
+            box-shadow: 1px 3px 0px 0px  #9EC8B9;
+            border: 1px solid black;
+            cursor: pointer;
+
+            &:focus
+            {
+                outline: none;
+            }
+
+        }
+
         .key_search_wrapper
         {
             display: flex;
@@ -29,6 +43,14 @@ header
             input
             {
                 width: 300px;
+                box-shadow: inset 2px 4px 0px 0px #9EC8B9;
+                border: none;
+                padding-inline: 8px;
+
+                &:focus
+                {
+                    outline: none;
+                }
             }
 
             button
@@ -52,7 +74,7 @@ header
             button {
                     display: flex;
                     align-items: center;
-                    padding: 2px 8px;
+                    padding: 4px 10px;
                 }
         }
     }
