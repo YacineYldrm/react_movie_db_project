@@ -1,0 +1,59 @@
+header
+{
+    background-color: #092635;
+    color: white;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+
+    h1
+    {
+        font-size: 62px;
+    }
+
+    .search_input_wrapper
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+
+        .key_search_wrapper
+        {
+            display: flex;
+            gap: 16px;
+            
+            input
+            {
+                width: 300px;
+            }
+
+            button
+            {
+                display: flex;
+                align-items: center;
+                padding: 8px 24px;
+            }
+
+            input, button
+            {
+                height: 30px;
+            }
+        }
+
+        .all_button_wrapper
+        {
+            display: flex;
+            gap: 8px;
+
+            button {
+                    display: flex;
+                    align-items: center;
+                    padding: 2px 8px;
+                }
+        }
+    }
+}
